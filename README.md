@@ -21,4 +21,4 @@ live view of this project is under this link:
 
 ## License
 
-This project is under the GNU License. This grants you the freedom to run, study, share, and modify however to your liking so long as you open-source your own version. Click <a href="License.txt">LICENSE</a>file for more details.
+This project is under the GNU License. This grants you the freedom to run, study, share, and modify however to your liking so long as you open-source your own version. Click <a href="License.txt">LICENSE</a> file for more details.

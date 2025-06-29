@@ -1,0 +1,90 @@
+* {
+    transition: all .3s ease-in-out;
+    font-family: outfit;
+    color: #eeeeef;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: #0b0b0a;
+}
+
+nav {
+    justify-content: space-between;
+    height: max-content;
+    display: flex;
+
+    padding: .5cqw 5cqw;
+    margin: 2cqw 0;
+
+    .logo {
+        height: 5cqw;
+    }
+
+    .nav-selection {
+        height: max-content;
+        display: flex;
+
+        border: #eeeeef20 .1cqw solid;
+        background-color: #eeeeef20;
+        backdrop-filter: blur(100px);
+        padding: .3cqw .3cqw;
+        border-radius: 5cqw;
+        margin: auto 0;
+        gap: .3cqw;
+        
+        
+        .nav-btn {
+            margin: auto 0;
+            cursor: pointer;
+            border: none;
+
+            background-color: #eeeeef00;
+            padding: .3cqw 1cqw;
+            border-radius: 1cqw;
+            color: #737373;
+            font-size: .9cqw;
+
+            
+        }
+
+        .nav-btn:hover,
+        .nav-btn:active {
+            background-color: #eeeeef10;
+            color: #eeeeef;
+        }
+
+        #github {
+             background-image: linear-gradient(#eeeeee10, #eeeeef50);
+             backdrop-filter: blur(10%);
+             color: #eeeeef99;
+        }
+        #github:hover {
+            color: #eeeeef;
+        }
+        
+    }
+    
+    .multi-nav {
+        border: solid .1cqw #eeeeef00;
+        background-color: #eeeeef00;
+        padding: .5cqw .5cqw;
+        border-radius: 100%;
+        margin: auto 0;
+        height: 1.5cqw;
+        
+        transition: transform 1s ease-in-out;
+        transform: rotate(0deg);
+        cursor: pointer;
+
+    }
+
+    .multi-nav:hover,
+    .multi-nav:active {
+        border: solid .1cqw #eeeeef10;
+        background-color: #eeeeef20;
+
+        transform: rotate(360deg);
+    }
+}
