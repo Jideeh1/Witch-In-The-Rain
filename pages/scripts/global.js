@@ -30,3 +30,23 @@ document.addEventListener('DOMContentLoaded', () => {
     animateBackgroundPositionX();
     setInterval(animateBackgroundPositionX, 3000);
 });
+
+function openSearchNav() {
+    var searchNav = document.querySelector('.search-con')
+
+    searchNav.style.display = "block";
+
+    setTimeout(() => {
+        searchNav.style.opacity = "1";
+  }, 100);
+}
+
+function closeSearchNav() {
+    var searchNav = document.querySelector('.search-con')
+
+    searchNav.style.opacity = "0";
+
+    setTimeout(() => {
+        searchNav.style.display = "none";
+    }, 500);
+}
