@@ -7,3 +7,26 @@ var messageSix = "Just don't start complaining when you `see how ass I write cod
 var signature = "Yours Truly, Jideeh\n\n";
 
 console.log(messageOne + messageTwo + messageThree + messageFour + messageFive + messageSix + signature);
+
+const character = ["Maya", "Sumire", "Reinhardt", "Scarlett", "Lance"];
+const el = document.querySelector('.role');
+let i = 0;
+
+setInterval(() => {
+  el.style.setProperty('--charac-text', `"${character[i]}"`);
+  i = (i + 1) % character.length;
+}, 1000);
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const root = document.documentElement;
+
+    function animateBackgroundPositionX() {
+        const randomX = Math.floor(Math.random() * 101);
+
+        root.style.setProperty('--bg-pos-x', `${randomX}%`);
+    }
+
+    animateBackgroundPositionX();
+    setInterval(animateBackgroundPositionX, 3000);
+});

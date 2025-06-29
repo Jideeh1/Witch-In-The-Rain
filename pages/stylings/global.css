@@ -19,7 +19,18 @@ nav {
     margin: 2cqw 0;
 
     .logo {
-        height: 5cqw;
+        font-family: "nghytserif";
+        letter-spacing: .2cqw;
+        font-size: 1.5cqw;
+        margin: auto 0;
+        
+        -webkit-text-fill-color: transparent;
+        background: linear-gradient(288deg, #ff8000, #f0c 53.2394%, #04f);
+        background-clip: text;
+        color: transparent;
+        background-position-x: var(--bg-pos-x);
+        background-position-y: 50%;
+        background-size: 200% 200%;
     }
 
     .nav-selection {
