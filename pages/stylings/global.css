@@ -170,7 +170,7 @@ nav {
 
             border-radius: .5cqw;
             padding: .3cqw .3cqw;
-            margin: .1cqw 0;
+            margin: .3cqw 0;
             gap: .7cqw;
 
             .icon {
@@ -189,10 +189,11 @@ nav {
 
             .texts {
                 flex-direction: column;
+                margin: auto 0;
 
                 h1 {
                     font-weight: 500;
-                    font-size: 1cqw;
+                    font-size: .85cqw;
                 }
 
                 h6 {
