@@ -126,7 +126,7 @@ nav {
             backdrop-filter: blur(100px);
             border-radius: .5cqw;
             margin: 7cqw auto;
-            padding: .7cqw 1cqw;
+            padding: .5cqw 1cqw .7cqw 1cqw;
             
 
             .search-bar {
@@ -217,5 +217,20 @@ nav {
             background-color: #73737330;
         }
         
+    }
+}
+
+main {
+    width: 100%;
+
+    .hero {
+
+        .hero-logo {
+            position: absolute;
+            
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
     }
 }
