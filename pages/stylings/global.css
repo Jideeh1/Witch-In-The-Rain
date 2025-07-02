@@ -216,6 +216,22 @@ nav {
         .search-nav-btn:hover {
             background-color: #73737330;
         }
+
+        .footer {
+            justify-content: space-between;
+            text-align: center;
+            display: flex;
+
+            padding: .5cqw 0cqw 0cqw 0cqw;
+            width: 100%;
+
+            h6 {
+                font-weight: 400;
+                font-size: .7cqw;
+                margin: auto 0;
+                color: #737373;
+            }
+        }
         
     }
 }
