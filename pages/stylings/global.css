@@ -234,3 +234,7 @@ main {
         }
     }
 }
+
+.hidden {
+    display: none !important;
+}

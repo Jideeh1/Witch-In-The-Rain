@@ -51,14 +51,24 @@ function closeSearchNav() {
     }, 500);
 }
 
+
 const searchInput = document.getElementById('searchInput');
-const cards = document.querySelectorAll('.card');
+
+const navBtns = document.querySelectorAll('.search-nav-btn');
 
 searchInput.addEventListener('input', function () {
-const query = this.value.toLowerCase();
+    const query = this.value.toLowerCase();
 
-    cards.forEach(card => {
-        const id = card.id.toLowerCase();
-        card.classList.toggle('hidden', !id.includes(query));
+    navBtns.forEach(navBtn => {
+        const dataRole = navBtn.dataset.role;
+        const h1Text = navBtn.querySelector('h1')?.textContent.toLowerCase();
+
+        let comparisonText = '';
+        if (dataRole) {
+            comparisonText = dataRole;
+        } else if (h1Text) {
+            comparisonText = h1Text;
+        }
+        navBtn.classList.toggle('hidden', !comparisonText.includes(query));
     });
 });
