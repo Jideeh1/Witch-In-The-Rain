@@ -213,6 +213,12 @@ nav {
             top: -5%;
         }
 
+        .close-button:hover,
+        .close-button:active {
+            opacity: .5;
+        }
+        
+
         .search-nav-btn:hover {
             background-color: #73737330;
         }
