@@ -72,3 +72,5 @@ searchInput.addEventListener('input', function () {
         navBtn.classList.toggle('hidden', !comparisonText.includes(query));
     });
 });
+
+
