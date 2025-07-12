@@ -16,13 +16,61 @@ html {
 }
 
 aside {
-    background-color: red;
+    justify-content: space-between;
+    flex-direction: column;
     position: fixed;
-    padding: 1cqw 1cqh;
-    height: 100vh;
+    display: flex;
+
+    padding: 2cqw 1cqh;
+    margin: auto 0;
+    height: 95vh;
     width: 5vw;
 
     .logo {
+        margin: 0 auto;
         width: 5vw;
     }
+
+    nav {
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+
+        gap: 1cqw;
+
+        .nav-btn {
+            border-radius: 100%;
+            padding: .5cqw;
+
+            span {
+                vertical-align: middle;
+            }
+        }
+
+
+        .nav-btn:hover,
+        .nav-btn:focus, 
+        .nav-btn:active {
+            background-color: #ffffff20;
+        }
+    }
+
+    .expand {
+        cursor: pointer;
+        margin: 0 auto;
+    }
+}
+
+svg {
+  fill: yellow;
+  width: 100px;
+  height: auto;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 24
 }
