@@ -43,11 +43,13 @@ aside {
             display: flex;
             gap: 1cqw;
 
-            p {
-                /* display: none; */
-
+            .text-aside {
+                display: none;
+                
                 font-weight: 200;
                 margin: auto 0;
+                opacity: 0;
+                width: 0;
             }
 
 

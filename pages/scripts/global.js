@@ -74,3 +74,23 @@ searchInput.addEventListener('input', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+        function openClose() {
+            var toggler = document.querySelector('.toggler');
+            var sideText = document.querySelectorAll('.text-aside');
+
+            if (toggler.innerHTML === 'left_panel_open'){
+                toggler.innerHTML = 'left_panel_close';
+
+                console.log('I am open')
+                
+                toggler.style.display = 'block';
+                setTimeout(() => {
+                    toggler.style.opacity = '0';
+                    toggler.style.width = 'amx-content';
+                }, 5000);
+            } else {
+                toggler.innerHTML = 'left_panel_open';
+            }
+    }
+});
