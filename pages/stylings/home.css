@@ -21,10 +21,10 @@ aside {
     position: fixed;
     display: flex;
 
-    padding: 2cqw 1cqh;
+    padding: 1cqw 3cqh;
     margin: auto 0;
     height: 95vh;
-    width: 5vw;
+    width: max-content;
 
     .logo {
         margin: 0 auto;
@@ -39,11 +39,23 @@ aside {
         gap: 1cqw;
 
         .nav-btn {
-            border-radius: 100%;
-            padding: .5cqw;
+            cursor: pointer;
+            display: flex;
+            gap: 1cqw;
+
+            p {
+                /* display: none; */
+
+                font-weight: 200;
+                margin: auto 0;
+            }
+
 
             span {
                 vertical-align: middle;
+/* 
+                border-radius: 100%;
+                padding: .5cqw; */
             }
         }
 
