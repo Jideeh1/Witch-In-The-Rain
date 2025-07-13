@@ -40,24 +40,14 @@ aside {
 
         .nav-btn {
             cursor: pointer;
-            display: flex;
             gap: 1cqw;
 
-            .text-aside {
-                display: none;
-                
-                font-weight: 200;
-                margin: auto 0;
-                opacity: 0;
-                width: 0;
-            }
-
+            
+            border-radius: 100%;
+            padding: .5cqw;
 
             span {
                 vertical-align: middle;
-/* 
-                border-radius: 100%;
-                padding: .5cqw; */
             }
         }
 
