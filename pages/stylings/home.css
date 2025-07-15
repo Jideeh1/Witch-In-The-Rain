@@ -43,32 +43,38 @@ aside {
             display: flex;
             gap: .8cqw;
 
-
-            
-            border-radius: 100%;
-            padding: .5cqw;
-
             span {
                 vertical-align: middle;
             }
         }
 
         .tooltip {
-            vertical-align: middle;
+            margin: auto 0;
             visibility: hidden;
 
-            background-color: red;
+            background-color: #eeeeef20;
             border-radius: .4cqw;
             padding: .2cqw .5cqw;
-            font-size: .9cqw;
+            font-size: .8cqw;
+            color: #eeeeef;
 
             opacity: 0;
+        }
+
+        span {
+            border-radius: 100%;
+            padding: .3cqw;
         }
 
         a:hover .tooltip {
             visibility: visible;
             opacity: 1;
         }
+
+        span:hover {
+            background-color: #ffffff20;
+        }
+
     }
 
     .expand {
