@@ -18,16 +18,15 @@ html {
 aside {
     justify-content: space-between;
     flex-direction: column;
+    width: max-content;
     position: fixed;
     display: flex;
+    
+    padding: 2cqw;
 
-    padding: 1cqw 3cqh;
-    margin: auto 0;
     height: 95vh;
-    width: max-content;
 
     .logo {
-        margin: 0 auto;
         width: 3vw;
     }
 
@@ -35,12 +34,15 @@ aside {
         flex-direction: column;
         margin: 0 auto;
         display: flex;
-
         gap: 1cqw;
 
         .nav-btn {
+            text-decoration: none;
             cursor: pointer;
-            gap: 1cqw;
+            margin: auto 0;
+            display: flex;
+            gap: .8cqw;
+
 
             
             border-radius: 100%;
@@ -51,17 +53,27 @@ aside {
             }
         }
 
+        .tooltip {
+            vertical-align: middle;
+            visibility: hidden;
 
-        .nav-btn:hover,
-        .nav-btn:focus, 
-        .nav-btn:active {
-            background-color: #ffffff20;
+            background-color: red;
+            border-radius: .4cqw;
+            padding: .2cqw .5cqw;
+            font-size: .9cqw;
+
+            opacity: 0;
+        }
+
+        a:hover .tooltip {
+            visibility: visible;
+            opacity: 1;
         }
     }
 
     .expand {
+        width: max-content;
         cursor: pointer;
-        margin: 0 auto;
 
         border-radius: 100%;
         padding: .5cqw;
