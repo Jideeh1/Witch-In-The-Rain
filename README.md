@@ -11,7 +11,7 @@ The goal of this project is to make a functional archive of Witch in The Rain wi
 
 読んでいただきありがとうございます　－　 JD
 
-Live demo under this link:
+Live demo under this link: https://witr-archive.netlify.app/pages/newhome
 
 ### Resources Used
 
