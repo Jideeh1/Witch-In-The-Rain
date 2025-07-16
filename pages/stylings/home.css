@@ -67,6 +67,7 @@ aside {
             background-color: #eeeeef20;
             border-radius: .4cqw;
             padding: .2cqw .5cqw;
+            margin-left: .5cqw;
             font-size: .8cqw;
             color: #eeeeef;
             left: 50px;
@@ -160,7 +161,7 @@ main {
             font-weight: 500;
             font-size: 5cqw;
             text-wrap: nowrap;
-
+            
             span {
                 font-family: "nghytserif";
                 letter-spacing: .2cqw;
