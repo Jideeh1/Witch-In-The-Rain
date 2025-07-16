@@ -18,6 +18,13 @@ setInterval(() => {
   i = (i + 1) % character.length;
 }, 1000);
 
+$(document).ready(function(){
+    $("#hero").ripples({
+        dropRadius: 20,
+        perturbance: 0.04,
+        resolution : 1080
+    })
+})
 
 function openClose() {
     var toggler = document.querySelector('.toggler');
