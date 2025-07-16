@@ -152,6 +152,10 @@ main {
             padding: .5cqw 0;
         }
 
+        #warning {
+            opacity: .3;
+        }
+
         h1 {
             font-weight: 500;
             font-size: 5cqw;
