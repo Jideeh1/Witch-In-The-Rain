@@ -11,6 +11,11 @@
     display: none;
 }
 
+::selection {
+  background: #80008060;
+  color: rgb(255, 176, 244);
+}
+
 html {
     background-color: #0a0a0a;
 }
@@ -115,4 +120,46 @@ svg {
   'wght' 200,
   'GRAD' 0,
   'opsz' 24
+}
+
+main {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 53%;
+    top: 50%;
+
+    .hero {
+        flex-direction: column;
+        display: flex;
+        
+        p {
+            margin: 0 auto;
+
+            
+            color: rgb(132, 128, 128);
+            letter-spacing: .15cqw;
+            font-size: .75cqw;
+            font-weight: 500;
+            padding: .5cqw 0;
+        }
+
+        h1 {
+            font-weight: 500;
+            font-size: 3cqw;
+
+            span {
+                font-family: "nghytserif";
+                letter-spacing: .2cqw;
+                margin: auto 0;
+                font-weight: 500;
+                
+                background: linear-gradient(288deg, #ff8000, #f0c 53.2394%, #04f);
+                background-clip: text;
+                color: transparent;
+                background-position-x: var(--bg-pos-x);
+                background-position-y: 50%;
+                background-size: 200% 200%;
+            }
+        }
+    }
 }
