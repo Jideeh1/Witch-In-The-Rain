@@ -18,6 +18,7 @@ Live demo under this link: https://witr-archive.netlify.app/pages/newhome
 - [W3School Documentations](https://www.w3schools.com/)
 - [mdnW Web Docs](https://developer.mozilla.org/en-US/)
 - [Vanilla-tilt.js](https://micku7zu.github.io/vanilla-tilt.js/)
+- [Ripple.js](https://github.com/sirxemic/jquery.ripples)
 
 ## License
 
