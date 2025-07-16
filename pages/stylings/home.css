@@ -126,9 +126,11 @@ svg {
 main {
     position: relative;
     height: 100vh;
+
     canvas {
-        width: 100%;
         height: 100%;
+        width: 100%;
+        z-index: -10;
     }
 
     .hero {
@@ -145,14 +147,15 @@ main {
             
             color: rgb(132, 128, 128);
             letter-spacing: .15cqw;
-            font-size: .75cqw;
+            font-size: 1cqw;
             font-weight: 500;
             padding: .5cqw 0;
         }
 
         h1 {
             font-weight: 500;
-            font-size: 3cqw;
+            font-size: 5cqw;
+            text-wrap: nowrap;
 
             span {
                 font-family: "nghytserif";
