@@ -20,9 +20,11 @@ setInterval(() => {
 
 $(document).ready(function(){
     $("#hero").ripples({
-        dropRadius: 40,
         perturbance: 0.04,
-        resolution : 1080
+        resolution : 512,
+        dropRadius : 20,
+        imageUrl   : null,
+        interactive: true
     })
 })
 
