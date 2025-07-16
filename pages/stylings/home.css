@@ -30,6 +30,7 @@ aside {
     
     padding: 2cqw 0cqw 2cqw 2cqw;
     height: 100%;
+    z-index: 3;
 
     .logo {
         width: 3vw;
@@ -123,12 +124,18 @@ svg {
 }
 
 main {
-    transform: translate(-50%, -50%);
-    position: absolute;
-    left: 53%;
-    top: 50%;
+    position: relative;
+    height: 100vh;
+    canvas {
+        width: 100%;
+        height: 100%;
+    }
 
     .hero {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 53%;
+        top: 50%;
         flex-direction: column;
         display: flex;
         

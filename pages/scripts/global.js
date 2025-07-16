@@ -7,6 +7,7 @@ var messageSix = "Just don't start complaining when you `see how ass I write cod
 var signature = "Yours Truly, Jideeh\n\n";
 
 console.log(messageOne + messageTwo + messageThree + messageFour + messageFive + messageSix + signature);
+console.log("(says FUNCTION if jQuery is working): " + typeof jQuery);
 
 const character = ["Maya", "Sumire", "Reinhardt", "Scarlett", "Lance"];
 const el = document.querySelector('.role');
@@ -92,3 +93,11 @@ searchInput.addEventListener('input', function () {
         navBtn.classList.toggle('hidden', !comparisonText.includes(query));
     });
 });
+
+
+$('body').ripples({
+	resolution: 512,
+	dropRadius: 20,
+	perturbance: 0.1,
+});
+
