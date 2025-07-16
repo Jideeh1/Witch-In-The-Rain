@@ -18,22 +18,29 @@ html {
 aside {
     justify-content: space-between;
     flex-direction: column;
+    box-sizing: border-box;
     width: max-content;
     position: fixed;
     display: flex;
     
-    padding: 2cqw;
-
-    height: 95vh;
+    padding: 2cqw 0cqw 2cqw 2cqw;
+    height: 100%;
 
     .logo {
         width: 3vw;
     }
 
     nav {
+        border-right: #eeeeef30 solid .2cqw;
         flex-direction: column;
         margin: 0 auto;
         display: flex;
+        padding: 2cqw .5cqw 2cqw 0cqw;
+
+        mask-image: linear-gradient(to bottom, 
+                        transparent, black 20%, 
+                        black 80%, transparent);
+        
         gap: 1cqw;
 
         .nav-btn {
@@ -41,7 +48,6 @@ aside {
             cursor: pointer;
             margin: auto 0;
             display: flex;
-            gap: .8cqw;
 
             span {
                 vertical-align: middle;
@@ -49,15 +55,15 @@ aside {
         }
 
         .tooltip {
-            margin: auto 0;
             visibility: hidden;
+            margin: auto 0;
 
             background-color: #eeeeef20;
             border-radius: .4cqw;
             padding: .2cqw .5cqw;
             font-size: .8cqw;
             color: #eeeeef;
-
+            left: 50px;
             opacity: 0;
         }
 
@@ -66,7 +72,7 @@ aside {
             padding: .3cqw;
         }
 
-        a:hover .tooltip {
+        .nav-btn:hover .tooltip {
             visibility: visible;
             opacity: 1;
         }
@@ -78,21 +84,22 @@ aside {
     }
 
     .expand {
+        transform: rotate(0);
         width: max-content;
         cursor: pointer;
-
+        
+        transition-duration: 600ms;
         border-radius: 100%;
-        padding: .5cqw;
+        padding: .3cqw;
 
             span {
                 vertical-align: middle;
             }
     }
 
-    .expand:hover,
-    .expand:focus, 
-    .expand:active {
+    .expand:hover {
         background-color: #ffffff20;
+        transform: rotate(180deg);
     }
 }
 
