@@ -185,3 +185,8 @@ main {
 section{
     height: 100vh;
 }
+
+
+.library-carousel {
+    display: flex;
+}
