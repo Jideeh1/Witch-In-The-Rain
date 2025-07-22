@@ -183,10 +183,42 @@ main {
 }
 
 section{
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+
     height: 100vh;
+    width: 75vw;
 }
 
 
 .library-carousel {
+    justify-content: left;
+    margin: 0 auto;
     display: flex;
+
+    width: 100%;
+    gap: 1cqw;
+
+    .book {
+        flex-direction: column;
+
+        .book-cover {
+            height: 15cqw;
+            cursor: pointer;
+        }
+
+        .no-cover {
+            height: 15cqw;
+            width: 10cqw;
+        }
+
+        p {
+            text-align: center;
+
+            padding: .3cqw 0;
+            font-size: 1cqw;
+        }
+    }
 }
