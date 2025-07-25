@@ -22,7 +22,7 @@ html {
 
 
 body {
-    scroll-snap-type: mandatory;
+    /* scroll-snap-type: mandatory; */
 }
 
 aside {
@@ -223,12 +223,13 @@ section{
 
 .library-carousel {
     justify-content: left;
+    will-change: scroll-position;
     overflow: auto;
     margin: 0 auto;
     display: flex;
     cursor: grab;
 
-    transition: all .3s linear;
+    transition: linear;
 
     width: 100%;
     gap: 2cqw;
