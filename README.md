@@ -2,7 +2,7 @@
 
 ## Written Archives
 
-- **Version**: 2025.6.29
+- **Version**: 2025.7.25
 - **Status**: In Development
 - **Developers**: [Jideeh1](https://github.com/Jideeh1)
 - **Authors**: [ShizoCatto](https://x.com/ShizoCatto), [Jideeh1](https://github.com/Jideeh1)

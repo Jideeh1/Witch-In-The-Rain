@@ -28,70 +28,39 @@ $(document).ready(function(){
     })
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-    const libraryCarousel = document.querySelector('.library-carousel');
-    const prevBtn = document.getElementById('prevBtn');
-    const nextBtn = document.getElementById('nextBtn');
-    const books = Array.from(libraryCarousel.querySelectorAll('.book'));
-
-    function scrollCarousel(scrollAmount) {
-        libraryCarousel.scrollBy({
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-
-    let activeItemTimeout;
-    function updateActiveItem() {
-        clearTimeout(activeItemTimeout);
-        activeItemTimeout = setTimeout(() => {
-            const wrapperRect = libraryCarousel.getBoundingClientRect();
-            let closestItem = null;
-            let minDistance = Infinity;
-
-            books.forEach(item => {
-                const itemRect = item.getBoundingClientRect();
-                const itemCenter = itemRect.left + itemRect.width / 2;
-                const wrapperCenter = wrapperRect.left + wrapperRect.width / 2;
-                const distance = Math.abs(itemCenter - wrapperCenter);
-
-                if (itemRect.right > wrapperRect.left && itemRect.left < wrapperRect.right && distance < minDistance) {
-                    minDistance = distance;
-                    closestItem = item;
-                }
-            });
-
-            books.forEach(item => {
-                item.classList.remove('carousel-item-active');
-            });
-
-            if (closestItem) {
-                closestItem.classList.add('carousel-item-active');
-            }
-        }, 100);
-    }
-
-    prevBtn.addEventListener('click', () => {
-        const itemWidth = books[0].offsetWidth;
-        const itemMarginRight = parseFloat(getComputedStyle(books[0]).marginRight);
-        const scrollAmount = -(itemWidth + itemMarginRight);
-        scrollCarousel(scrollAmount);
-        setTimeout(updateActiveItem, 550);
-    });
-
-    nextBtn.addEventListener('click', () => {
-        const itemWidth = books[0].offsetWidth;
-        const itemMarginRight = parseFloat(getComputedStyle(books[0]).marginRight);
-        const scrollAmount = itemWidth + itemMarginRight;
-        scrollCarousel(scrollAmount);
-        setTimeout(updateActiveItem, 550);
-    });
-
-    libraryCarousel.addEventListener('scroll', updateActiveItem);
-    updateActiveItem();
-});
 
 
+
+// const slider = document.querySelector('.library-carousel');
+
+// let isDown = false;
+// let startX;
+// let scrollLeft;
+
+// slider.addEventListener('mousedown', (e) => {
+//     isDown = true;
+//     slider.classList.add('active');
+//     startX = e.pageX - slider.offsetLeft;
+//     scrollLeft = slider.scrollLeft;
+// });
+
+// slider.addEventListener('mouseleave', () => {
+//     isDown = false;
+//     slider.classList.remove('active');
+// });
+
+// slider.addEventListener('mouseup', () => {
+//     isDown = false;
+//     slider.classList.remove('active');
+// });
+
+// slider.addEventListener('mousemove', (e) => {
+//     if (!isDown) return;
+//     e.preventDefault();
+//     const x = e.pageX - slider.offsetLeft;
+//     const walk = (x - startX) * 2;
+//     slider.scrollLeft = scrollLeft - walk;
+// });
 
 function openClose() {
     var toggler = document.querySelector('.toggler');

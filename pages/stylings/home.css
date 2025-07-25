@@ -20,6 +20,11 @@ html {
     background-color: #0a0a0a;
 }
 
+
+body {
+    scroll-snap-type: mandatory;
+}
+
 aside {
     justify-content: space-between;
     flex-direction: column;
@@ -125,6 +130,8 @@ svg {
 }
 
 main {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
     position: relative;
     height: 100vh;
 
@@ -183,6 +190,9 @@ main {
 }
 
 section{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
@@ -212,14 +222,16 @@ section{
 }
 
 .library-carousel {
-    cursor: grab;
-    overflow: auto;
     justify-content: left;
+    overflow: auto;
     margin: 0 auto;
     display: flex;
+    cursor: grab;
+
+    transition: all .3s linear;
 
     width: 100%;
-    gap: 1cqw;
+    gap: 2cqw;
 
     .book {
         flex-direction: column;
